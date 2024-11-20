@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Images/dot.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>DOT. Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="home-body">
+        <header class="home-header">
+            <a href="home.html">
+				<div class="logo-name" >
+			    	<img src="Images/dot.png" id="logo" alt="DOT">
+                	<p class="company-name">Diversifying Optical Technology</p>
+            	</div>
+			</a>
+			<nav class="navbar">
+				<ul class="links">
+                        <li class="center-tab-text"><a href="about.html">About</a></li>
+                        <li class="center-tab-text"><a href="blog.html">Blog</a></li>
+                        <li class="center-tab-text"><a href="documentation.html">Documentation</a></li>
+						<li class="contact"><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+				</ul>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</nav>
+			<ul class="dropdown_menu ">
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="documentation.html">Documentation</a></li>
+				<li><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+			</ul>
+		</header>
+		<script>
+			const toggleBtn = document.querySelector('.toggle_btn')
+			const toggleBtnIcon = document.querySelector('.toggle_btn i')
+			const dropDownMenu = document.querySelector('.dropdown_menu')
+	
+			toggleBtn.onclick = function () {
+				dropDownMenu.classList.toggle('open')
+				const isOpen = dropDownMenu.classList.contains('open')
+	
+				toggleBtnIcon.classList = isOpen
+					? 'fa-solid fa-xmark'
+					: 'fa-solid fa-bars'
+			}
+		</script>
+        <div class="docu-title">
+            <div>
+                <h1 class="docu">Documentation</h1>
+                <p class="docu-text">Throughout our invention process, we have written and compiled multiple documents for 
+                    different purposes. Effective documentation has been vital in tracking our progress, facilitating collaboration, 
+                    and ensuring that our ideas and decisions are clearly recorded and communicated. Below are four of our most important documents that reflect the key milestones and 
+                    insights gained throughout our development journey. These documents are a part of our final Lemelson-MIT 
+                    InventTeams submission.</p>
+            </div>
+        </div>
+
+        <div class="assign2">
+            <div class="assign-content marg">
+                <div class="doc-desc">
+                    <h1>Background</h1>
+                    <p class="bg-desc">Our background summary highlights the major findings from our literature 
+                        and market research. By identifying the need for affordable and portable braille displays in the 
+                        VIP community, we developed a solution and gained feedback from VIPs to create multiple iterations.</p>
+                </div>
+                <iframe src="Docs/background.pdf" class="assign-desc"></iframe>
+            </div>
+    
+            <div class="assign-content marg">
+                <div class="doc-desc">
+                    <h1 class="logbook">Logbook</h1>
+                    <p class="bg-desc">We have maintained a detailed log of our progress and 
+                        kept track of important stages during our project timeline. From the brainstorming phase 
+                        to our device construction, we have documented each step, refining our approach based on the insights 
+                        gained along the way.</p>
+                </div>
+                <iframe src="Docs/logbook.pdf" class="assign-desc pdf-sub"></iframe>
+            </div>
+        </div>
+
+        <div class="assign2">
+            <div class="assign-content marg">
+                <div class="doc-desc">
+                    <h1>Project Organization</h1>
+                    <p class="bg-desc">As our project progresses, we hope to invite more people to our team to work towards a 
+                        shared goal of addressing the problems faced by VIPs. Our project organization document serves to 
+                        communicate our timeline and how we plan to organize a collaborative team.</p>
+                </div>
+                <iframe src="Docs/timeline.pdf" class="assign-desc"></iframe>
+            </div>
+    
+            <div class="assign-content marg">
+                <div class="doc-desc">
+                    <h1 class="logbook">Community Engagement</h1>
+                    <p class="bg-desc">We have connected with different organizations and participated in community outreach events. 
+                        In doing so, we aim to include VIPs in every step of our device development to ensure that our device has 
+                        the most effective design tailored to the needs of its users.</p>
+                </div>
+                <iframe src="Docs/community.pdf" class="assign-desc pdf-sub"></iframe>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <header class="home-header">
+                <a href="home.html">
+                    <div class="logo-name" >
+                        <img src="Images/dot.png" id="logo" alt="DOT">
+                        <p class="company-name">Diversifying Optical Technology</p>
+                    </div>
+                </a>
+                <div class="footer-tabs">
+                    <nav class="navbar">
+                        <ul class="links">
+                                <li class="center-tab-text"><a href="home.html">Home</a></li>
+                                <li class="center-tab-text"><a href="about.html">About</a></li>
+                                <li class="center-tab-text"><a href="blog.html">Blog</a></li>
+                                <li class="center-tab-text"><a href="documentation.html">Documentation</a></li>
+                                <li class="contactF"><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </footer>
+        </body>
+</html>
