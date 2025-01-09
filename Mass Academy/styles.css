@@ -1,5 +1,6 @@
 body {
     margin: 0;
+	box-sizing: border-box;
 }
 
 .home-body {
@@ -412,7 +413,7 @@ a {
     margin: 1.5rem;
     width: 350px;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 3px 2px 30px rgba(44, 67,109,0.15);
     transition: all 0.3s ease;
@@ -447,13 +448,14 @@ a {
 
 .card_readmores{
     margin-top: 1rem;
-    padding: 5px;
+    padding: 6px;
     border-radius: 5px;
     color: white;
     font-weight: 100;
     font-family: sans-serif;
     background-color: #175aa7;
     width: fit-content;
+	border: none;
 }
 
 .card:hover{
@@ -830,6 +832,7 @@ iframe {
     text-align: left;
     flex: 1 1 18%; 
     min-width: 200px; 
+	position: relative;
 }
 
 .team-name {
@@ -838,6 +841,7 @@ iframe {
     text-align: center;
 }
 
+
 .name {
     margin-bottom: 0.4rem;
     text-align: center;
@@ -845,4 +849,167 @@ iframe {
 
 .team-title {
 	margin-bottom: 3rem;
+}
+
+/*Moving elements up on hover style comes from https://stackoverflow.com/questions/33271928/move-html-element-upwards-on-hover
+
+.teams .team-name, .teams .name {
+    transition: opacity 0.1s ease;
+}
+
+.teams:hover .team-name, .teams:hover .name {
+    opacity: 0;
+}
+
+
+.teams::after {
+    content: attr(data-description);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	background: transparent;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+    width: 80%;
+    z-index: 1;
+}
+
+.teams:hover::after {
+    display: block;
+}
+	*/
+
+/**Styling code below for Card Slider comes from https://www.youtube.com/watch?v=VUtJ7FWCfZA&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2*/
+
+.news-whole {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 2rem;
+	font-family: sans-serif;
+}
+
+.card-wrapper {
+	max-width: 1100px;
+	margin: 0 60px 35px;
+	padding: 20px 20px;
+	overflow: hidden;
+}
+
+.card-list .card-item{
+	list-style: none;
+}
+
+.card-list .card-item .card-link {
+	user-select: none;
+	display: block;
+	background: #ffecd1;
+	border-radius: 12px;
+	text-decoration: none;
+	border: 2px solid transparent;
+	box-shadow: 0 10px 10px rgba(44, 67,109,0.15);
+	transition: 0.2s ease;
+}
+
+.image-padding {
+	margin: -2px;
+}
+
+.card-list .card-item .card-link:active {
+	cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, #ebc37b, #e9b977, #e7af73, #e4a670, #e19f70, #df9c73, #dd9976, #da9678);
+}
+
+.card-list .card-item .card-link:hover .card-button {
+	background: #f6e2b5;
+    color: #000; 
+}
+
+.card-list .card-link .card-image {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-radius: 12px 12px 0 0;
+}
+
+.card-list .card-link .badge {
+	padding: 5px;
+	font-size: 0.95rem;
+	font-weight: 100;
+	margin-top: 1rem;
+	background: #d0e6ff;
+	color: black;
+	width: fit-content;
+	border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.card-list .card-link .card-title {
+	font-size: 1.19rem;
+	color: #000;
+	font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+	color: white;
+	background: #175aa7;
+	cursor: pointer;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    border-radius: 5px;
+	letter-spacing: 1px;
+	margin-top: 1rem;
+    font-weight: 100;
+	padding: 5px;
+    width: fit-content;
+	font-size: 0.95rem;
+}
+
+.news-read {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.card-wrapper .swiper-slide-button {
+	color:#175aa7;
+	margin-top: -35px;
+}
+
+.news-title {
+	margin-bottom: 1rem;
+}
+
+.news-title-head {
+	height: 25vh;
+}
+
+.news-header {
+	font-size: 36px;
+}
+
+.arrow-icon {
+	transform: rotate(-45deg) scale(0.95);
+}
+
+@media (max-width: 900px) {
+	.news-header {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 }

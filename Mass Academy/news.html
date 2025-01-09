@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Images/dot.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <title>DOT. Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="home-body">
+        <header class="home-header">
+            <a href="home.html">
+				<div class="logo-name" >
+			    	<img src="Images/dot.png" id="logo" alt="DOT">
+                	<p class="company-name">Diversifying Optical Technology</p>
+            	</div>
+			</a>
+			<nav class="navbar">
+				<ul class="links">
+                        <li class="center-tab-text"><a href="about.html">About</a></li>
+                        <li class="center-tab-text"><a href="blog.html">Blog</a></li>
+                        <li class="center-tab-text"><a href="documentation.html">Documentation</a></li>
+                        <li class="center-tab-text"><a href="news.html">News</a></li>
+                        <li class="center-tab-text"><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+                        <li class="contact"><a href="https://www.gofundme.com/f/diversifying-optical-technology-mass-academy-lemelsonmit?attribution_id=sl:72c639ca-b08f-4234-b987-4bbf7dec0b14&utm_campaign=man_ss_icons&utm_medium=customer&utm_source=copy_link" target="_blank">Support</a></li>
+				</ul>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</nav>
+			<ul class="dropdown_menu ">
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="documentation.html">Documentation</a></li>
+                <li><a href="news.html">News</a></li>
+				<li><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+			</ul>
+		</header>
+		<script>
+			const toggleBtn = document.querySelector('.toggle_btn')
+			const toggleBtnIcon = document.querySelector('.toggle_btn i')
+			const dropDownMenu = document.querySelector('.dropdown_menu')
+	
+			toggleBtn.onclick = function () {
+				dropDownMenu.classList.toggle('open')
+				const isOpen = dropDownMenu.classList.contains('open')
+	
+				toggleBtnIcon.classList = isOpen
+					? 'fa-solid fa-xmark'
+					: 'fa-solid fa-bars'
+			}
+		</script>
+        <div class="docu-title news-title-head">
+            <div>
+                <h1 class="docu news-header">DOT In The News</h1>
+            </div>
+        </div>
+
+        <!--Carousel comes from https://www.youtube.com/watch?v=VUtJ7FWCfZA&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2-->
+
+        <div class="news-whole">
+        <div class="swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <div class="card-link">
+                        <div class="image-padding">
+                            <img src="Images/chat.png" alt="Card Image" class="card-image">
+                        </div>
+                        <div class="card_panel">
+                            <div class="card_main_title news-title"><h2>Chandler Chat Interview</h2></div>
+                            <div class="tags_section">
+                                <ul>
+                                    <li>January 18th, 2024</li>
+                                </ul>
+                            </div>
+                            <a href="https://www.wccatv.com/video/beacon-hill-chat/chandler-chat-444" target="_blank" class="card-button">
+                                <div class="news-read">Read More</div>
+                                <div class="material-symbols-rounded arrow-icon">arrow_forward</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item swiper-slide">
+                    <div class="card-link">
+                        <div class="image-padding">
+                            <img src="Images/polar.png" alt="Card Image" class="card-image">
+                        </div>
+                        <div class="card_panel">
+                            <div class="card_main_title news-title"><h2>Inside InvenTeams</h2></div>
+                            <div class="tags_section">
+                                <ul>
+                                    <li>December 18th, 2024</li>
+                                </ul>
+                            </div>
+                            <a href="https://mailchi.mp/mit.edu/inside-inventeams-issue-one?e=%5bUNIQID%5d#:~:text=High%20School%20InvenTeam-,Massachusetts%20Academy%20of%20Mathematics%20%26%20Science,-Worcester%2C%20Massachusetts%0A%40MAMSInvenTeam" target="_blank" class="card-button">
+                                <div class="news-read">Read More</div>
+                                <div class="material-symbols-rounded arrow-icon">arrow_forward</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item swiper-slide">
+                    <div class="card-link">
+                        <div class="image-padding">
+                            <img src="Images/press.png" alt="Card Image" class="card-image">
+                        </div>
+                        <div class="card_panel">
+                            <div class="card_main_title news-title"><h2>Press Release</h2></div>
+                            <div class="tags_section">
+                                <ul>
+                                    <li>October 22nd, 2024</li>
+                                </ul>
+                            </div>
+                            <a href="https://www.businesswire.com/news/home/20241022623087/en/Eight-High-School-Teams-Receive-Lemelson-MIT-InvenTeams%C2%AE-Grants-To-Solve-Real-World-Problems-with-Technological-Solutions#:~:text=Massachusetts%20Academy%20of%20Math%20and%20Science%20(Worcester%2C%20Mass.)" target="_blank" class="card-button">
+                                <div class="news-read">Read More</div>
+                                <div class="material-symbols-rounded arrow-icon">arrow_forward</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item swiper-slide">
+                    <div class="card-link">
+                        <div class="image-padding">
+                            <img src="Images/MassAcademyTeam.png" alt="Card Image" class="card-image">
+                        </div>
+                        <div class="card_panel">
+                            <div class="card_main_title news-title"><h2>Meet the Team</h2></div>
+                            <div class="tags_section">
+                                <ul>
+                                    <li>October 22nd, 2024</li>
+                                </ul>
+                            </div>
+                            <a href="https://lemelson.mit.edu/teams/massachusetts-academy-math-and-science" target="_blank" class="card-button">
+                                <div class="news-read">Read More</div>
+                                <div class="material-symbols-rounded arrow-icon">arrow_forward</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+
+        </div>
+       </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.card-wrapper', {
+            loop: true,
+            spaceBetween: 30,
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                576: {
+                    slidesPerView: 2
+                },
+                1180: {
+                    slidesPerView: 3
+                },
+            }
+        });
+    </script>
+
+        <footer class="footer">
+            <header class="home-header">
+                <a href="home.html">
+                    <div class="logo-name" >
+                        <img src="Images/dot.png" id="logo" alt="DOT">
+                        <p class="company-name">Diversifying Optical Technology</p>
+                    </div>
+                </a>
+                <div class="footer-tabs">
+                    <nav class="navbar">
+                        <ul class="links">
+                                <li class="center-tab-text"><a href="home.html">Home</a></li>
+                                <li class="center-tab-text"><a href="about.html">About</a></li>
+                                <li class="center-tab-text"><a href="blog.html">Blog</a></li>
+                                <li class="center-tab-text"><a href="documentation.html">Documentation</a></li>
+                                <li class="center-tab-text"><a href="news.html">News</a></li>
+                                <li class="contactF"><a href="mailto:kgundu@wpi.edu">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </footer>
+        </body>
+</html>
